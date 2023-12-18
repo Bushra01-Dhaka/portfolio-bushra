@@ -23,8 +23,7 @@ const About = () => {
           technologies. I have strong skills in HTML, CSS, JavaScript. I have
           experience with popular libraries and frameworks like Tailwind CSS,
           Bootstrap, React as well as serverside technologies like Express,
-          MongoDB. Currently I am 3rd year Computer Science and Engineering
-          student in Dhaka City College.
+          MongoDB.
         </p>
         <div>
             <Link><button className='btn bg-[#F72464] uppercase text-white hover:bg-[#39A7FF] border-0 shadow-lg rounded'><FaDownload></FaDownload>Download CV</button></Link>
