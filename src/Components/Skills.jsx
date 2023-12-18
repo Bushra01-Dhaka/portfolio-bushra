@@ -8,10 +8,11 @@ import mongo from "../assets/icons/mongo.png"
 import talu from "../assets/icons/tailwind.png"
 import boot from "../assets/icons/bootstrap.png"
 import fire from "../assets/icons/firebase.png"
+import ProgressBar from "./ProgressBar";
 
 const Skills = () => {
   return (
-    <div className="container mx-auto py-[100px] bg-base-200">
+    <div className="container mx-auto py-[100px] bg-base-200 text-black">
       <h2 className="text-3xl lg:text-5xl text-center font-bold text-black uppercase">Skills</h2>
       <div className="max-w-[100px] mx-auto text-center bg-[#F72464]">
         <hr className="border-b-2 mt-4 border-[#F72464]" />
@@ -27,7 +28,8 @@ const Skills = () => {
             />
             <h2 className="text-xl text-black">HTML</h2>
           </div>
-          <progress className="progress progress-accent w-56" value="80" max="100"></progress>
+          {/* <progress className="progress progress-accent w-56" value="80" max="100"></progress> */}
+          <ProgressBar value={80}></ProgressBar>
         </div>
 
         <div>
@@ -39,7 +41,8 @@ const Skills = () => {
             />
             <h2 className="text-xl text-black">CSS</h2>
           </div>
-          <progress className="progress progress-accent w-56" value="70" max="100"></progress>
+          {/* <progress className="progress progress-accent w-56" value="70" max="100"></progress> */}
+          <ProgressBar value={70}></ProgressBar>
         </div>
 
         <div>
@@ -51,7 +54,8 @@ const Skills = () => {
             />
             <h2 className="text-xl text-black ">Tailwind CSS</h2>
           </div>
-          <progress className="progress progress-accent w-56" value="85" max="100"></progress>
+          {/* <progress className="progress progress-accent w-56" value="85" max="100"></progress> */}
+          <ProgressBar value={85}></ProgressBar>
         </div> 
 
         <div>
@@ -63,7 +67,8 @@ const Skills = () => {
             />
             <h2 className="text-xl text-black">Bootstrap</h2>
           </div>
-          <progress className="progress progress-accent w-56" value="70" max="100"></progress>
+          {/* <progress className="progress progress-accent w-56" value="70" max="100"></progress> */}
+          <ProgressBar value={70}></ProgressBar>
         </div> 
 
 
@@ -76,7 +81,8 @@ const Skills = () => {
             />
             <h2 className="text-xl text-black">JavaScript</h2>
           </div>
-          <progress className="progress progress-accent w-56" value="60" max="100"></progress>
+          {/* <progress className="progress progress-accent w-56" value="60" max="100"></progress> */}
+          <ProgressBar value={60}></ProgressBar>
         </div>
 
         <div>
@@ -88,7 +94,8 @@ const Skills = () => {
             />
             <h2 className="text-xl text-black ">Firebase</h2>
           </div>
-          <progress className="progress progress-accent progress-[#F72464] w-56" value="70" max="100"></progress>
+          {/* <progress className="progress progress-accent progress-[#F72464] w-56" value="70" max="100"></progress> */}
+          <ProgressBar value={70}></ProgressBar>
         </div> 
 
         <div>
@@ -100,7 +107,8 @@ const Skills = () => {
             />
             <h2 className="text-xl text-black ">React</h2>
           </div>
-          <progress className="progress progress-accent w-56" value="65" max="100"></progress>
+          {/* <progress className="progress progress-accent w-56" value="65" max="100"></progress> */}
+          <ProgressBar value={65}></ProgressBar>
         </div>
 
         <div>
@@ -112,7 +120,8 @@ const Skills = () => {
             />
             <h2 className="text-xl text-black ">Express js</h2>
           </div>
-          <progress className="progress progress-accent w-56" value="50" max="100"></progress>
+          {/* <progress className="progress progress-accent w-56" value="50" max="100"></progress> */}
+          <ProgressBar value={50}></ProgressBar>
         </div>
 
         <div>
@@ -124,7 +133,8 @@ const Skills = () => {
             />
             <h2 className="text-xl text-black ">MongoDB</h2>
           </div>
-          <progress className="progress progress-accent w-56" value="65" max="100"></progress>
+          {/* <progress className="progress progress-accent w-56" value="65" max="100"></progress> */}
+          <ProgressBar value={65}></ProgressBar>
         </div>
 
      
