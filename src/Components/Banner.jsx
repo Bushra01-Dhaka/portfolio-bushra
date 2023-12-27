@@ -3,7 +3,7 @@ import { FaArrowRight, FaFacebook, FaGithub, FaLinkedin, FaTwitter } from 'react
 import { Link } from 'react-router-dom';
 
 const Banner = () => {
-    const [title, setTitle] = useState("Web Developer");
+    const [title, setTitle] = useState("Web");
   const words = ["Web ", "React ", "Frontend "];
 
   useEffect(() => {
@@ -17,7 +17,9 @@ const Banner = () => {
     return () => clearInterval(interval);
   }, [title]);
     return (
-        <div className=" py-[150px]">
+        <div style={{
+          backgroundImage: "url(https://i.ibb.co/5rC8QzW/banner-pink.png)",
+        }} className=" py-[100px] text-black bg-fixed  hero min-h-screen">
             <div className="flex">
             <div className="md:max-w-3xl p-10 shadow-xl rounded-md">
                <div className='text-black text-3xl md:text-4xl flex flex-col space-y-8'>
@@ -30,11 +32,11 @@ const Banner = () => {
             
             <div className='flex-1 mx-auto flex justify-center items-center'>
                 <div className='mx-auto p-4'>
-                    <p className="py-4 text-center">Hey, {`It's Humayra Anjum Bushra`}</p>
+                    <p className="py-4 text-center font-semibold text-slate-600">Hey, {`It's Humayra Anjum Bushra`}</p>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold uppercase text-black">{`I'm`} <span className='text-[#F72464]'>{title}</span> Developer</h1>
-                <p className="py-6 md:max-w-xl mx-auto text-center">A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+                <p className="py-6 md:max-w-xl mx-auto text-slate-600 text-center">A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
                 <div className='mx-auto text-center'>
-                <Link><button className='btn bg-[#F72464] text-white hover:bg-[#39A7FF] border-0 shadow-lg rounded uppercase'><FaArrowRight></FaArrowRight>Explore Projects</button></Link>
+                <Link to="/projects"><button className='animated-image btn bg-[#F72464] text-white hover:bg-[#39A7FF] border-0 shadow-lg rounded uppercase mt-4'><FaArrowRight></FaArrowRight>Explore Projects</button></Link>
                 </div>
                 </div>
             </div>

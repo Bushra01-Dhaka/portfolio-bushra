@@ -5,13 +5,12 @@ import img from "../assets/icons/nav-logo.png"
 const Navbar = () => {
      const navItem = <>
          <li> <Link to='/'>Home</Link></li>
-         <li><Link>About</Link></li>
-         <li><Link>Skills</Link></li>
-         <li><Link>Projects</Link></li>
-         <li><Link>Contact</Link></li>
+         <li><Link to="/about">About</Link></li>
+         <li><Link to="/skills">Skills</Link></li>
+         <li><Link to="/projects">Projects</Link></li>
      </>
     return (
-        <div className="navbar bg-base-100 fixed z-20 shadow-xl md:max-w-screen-2xl mx-auto">
+        <div className="navbar bg-base-100 fixed z-20 shadow-xl md:max-w-screen-xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

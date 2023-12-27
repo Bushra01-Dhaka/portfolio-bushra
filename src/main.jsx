@@ -8,6 +8,9 @@ import {
 } from "react-router-dom";
 import MainLayout from './Layout/MainLayout';
 import Home from './Pages/Home/Home';
+import About from './Components/About';
+import Skills from './Components/Skills';
+import Projects from './Components/Projects';
 
 const router = createBrowserRouter([
   {
@@ -16,8 +19,21 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>
-      }
+        element: <Home></Home>,
+      },
+      {
+        path:"/about",
+        element:<About></About>
+      },
+      {
+        path:"/skills",
+        element: <Skills></Skills>
+      },
+      {
+        path:"/projects",
+        element:<Projects></Projects>
+      },
+     
     ]
   },
 ]);
@@ -25,7 +41,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className='md:max-w-screen-2xl mx-auto'>
+    <div className='md:max-w-screen-xl mx-auto'>
     <RouterProvider router={router} />
     </div>
   </React.StrictMode>,
